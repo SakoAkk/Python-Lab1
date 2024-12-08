@@ -1,35 +1,57 @@
-## Layihənin Məqsədi
-- Server log faylından regex istifadə edərək məlumat çıxarmaq.
-- Təhlükəli IP-ləri təyin etmək və JSON formatında saxlamaq.
-- Log məlumatlarını analiz edərək müxtəlif formatlarda (txt və csv) saxlamaq.
+---
+ 
+## Project Goal
+- Extract data from server log file using regex.
+- Identify dangerous IPs and save in JSON format.
+- Analyze log data and save in different formats (txt and csv).
+  
 
-## Quraşdırma Təlimatları
 
-1. **Layihəni yükləyin:**
-   GitHub-da layihə səhifənizdən layihəni yükləyin:
-         git clone https://github.com/SakoAkk/Python-Lab1.git
-   cd Faylın yerləşdiyi qovluq
-2. **Virtual mühit yaradın və aktivləşdirin:**
-   Layihənin asılılıqlarını izolyasiya etmək üçün virtual mühit yaradın:
+---
+
+## **Getting Started**
+
+### **Prerequisites**
+- Python 3.7 or later
+- A virtual environment (optional but recommended)
+
+### **Setup**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SakoAkk/Python-Lab2.git
+   cd Python-Lab2
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
    python -m venv venv
-   .venv\Scripts\activate  # Windows üçün
-3. **Kitabxanaları quraşdırın:**
-   Layihənin işləməsi üçün lazım olan kitabxanaları requirements.txt faylından quraşdırın:
-   pip freeze > requirements.txt
-   python -m pip install --upgrade pip
-   pip install -r requirements.txt
-4. **Skripti işə salın:**
-   Log faylını analiz etmək üçün aşağıdakı əmri icra edin:
-   python main.py
+   venv\Scripts\activate    # Windows
+   source venv/bin/activate # macOS/Linux
+   ```
 
-Layihə Strukturunun Təsviri
-main.py: Log faylının analizi və nəticələrin çıxarılması üçün əsas Python skripti.
-server_logs.txt: Log faylı. Bu fayl analiz etmək üçün istifadə olunur.
-question.txt: Tapşırıq sualları və tapşırıq detalları.
-requirements.txt: Layihənin işləməsi üçün lazım olan kitabxanalar.
-failed_logins.json: 5-dən çox uğursuz giriş cəhdi olan IP-lərin siyahısı.
-threat_ips.json: Təhlükəli IP-lərin siyahısı.
-combined_security_data.json: Uğursuz girişlər və təhlükəli IP-lərini birləşdirən fayl.
-log_analysis.txt: Log analizinin nəticələrinin mətn faylı.
-log_analysis.csv: Log məlumatlarının cədvəl formatında saxlanması.
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## **Usage**
+
+Run the script to analyze logs and generate output files:
+
+```bash
+python main.py
+```
+
+Project Structure Description
+```plaintext
+main.py: The main Python script for analyzing the log file and extracting results.
+server_logs.txt: The log file. This file is used for analysis.
+question.txt: Task questions and task details.
+requirements.txt: Libraries required for the project to run.
+failed_logins.json: List of IPs with more than 5 failed login attempts.
+threat_ips.json: List of dangerous IPs.
+combined_security_data.json: File that combines failed logins and dangerous IPs.
+log_analysis.txt: Text file of log analysis results.
+log_analysis.csv: Storage of log data in a table format.
 
