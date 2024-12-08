@@ -1,7 +1,3 @@
-# Python Lab - Log Analysis
-
-Bu layihə, verilmiş server log faylını analiz edərək uğursuz giriş cəhdlərini və təhlükəli IP-ləri müəyyən etmək üçün hazırlanmışdır. Layihə Python dilində yazılıb və əsasən Regex (regular expressions) və fayl manipulyasiyasından istifadə edir.
-
 ## Layihənin Məqsədi
 - Server log faylından regex istifadə edərək məlumat çıxarmaq.
 - Təhlükəli IP-ləri təyin etmək və JSON formatında saxlamaq.
@@ -11,8 +7,8 @@ Bu layihə, verilmiş server log faylını analiz edərək uğursuz giriş cəhd
 
 1. **Layihəni yükləyin:**
    GitHub-da layihə səhifənizdən layihəni yükləyin:
-   git clone https://github.com/sizin-username/lab1.git
-   cd lab1
+         git clone https://github.com/SakoAkk/Python-Lab1.git
+   cd Faylın yerləşdiyi qovluq
 2. **Virtual mühit yaradın və aktivləşdirin:**
    Layihənin asılılıqlarını izolyasiya etmək üçün virtual mühit yaradın:
    python -m venv venv
@@ -37,6 +33,3 @@ combined_security_data.json: Uğursuz girişlər və təhlükəli IP-lərini bir
 log_analysis.txt: Log analizinin nəticələrinin mətn faylı.
 log_analysis.csv: Log məlumatlarının cədvəl formatında saxlanması.
 
-Texnologiyalar
-Python 3.8+
-Regex: Loglardan məlumat çıxarmaq üçün.
