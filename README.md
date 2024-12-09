@@ -30,7 +30,7 @@
    source venv/bin/activate # macOS/Linux
    ```
 
-3. Install dependencies:
+3. Install dependencies(You can skip this part because there is no requirements.txt file in this project):
    ```bash
    pip install -r requirements.txt
    ```
